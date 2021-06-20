@@ -12,7 +12,6 @@
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment
 processing library for PHP 5.3+. This package implements [acapture](https://www.acapture.com/) support for Omnipay.
 
-
 ## Installation
 
 To install you can [composer](http://getcomposer.org/) require the package;

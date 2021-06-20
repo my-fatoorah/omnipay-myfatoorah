@@ -11,9 +11,6 @@
     "autoload": {
         "psr-4": { "Omnipay\\Myfatoorah\\" : "src/" }
     },
-    "require": {
-        "php": ">=5.4.0"
-    },
     "license": "MIT",
     "authors": [
         {

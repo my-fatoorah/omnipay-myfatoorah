@@ -1,9 +1,38 @@
 # Omnipay: MyFatoorah
 
-**MyFatoorah driver for the Omnipay PHP payment processing library**
+**MyFatoorah gateway integration for the Omnipay PHP payment processing library**
+
+## Introduction
+
+[![Build Status](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/badges/build.png?b=master)](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+[![Code Coverage](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/?branch=master)
+[![Total Downloads](http://poser.pugx.org/myfatoorah/omnipay/downloads)](https://packagist.org/packages/myfatoorah/omnipay)
+
+[Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment
+processing library for PHP 5.3+. This package implements [acapture](https://www.acapture.com/) support for Omnipay.
 
 
-Just want to see some code?
+## Installation
+
+To install you can [composer](http://getcomposer.org/) require the package;
+
+```
+$ composer require myfatoorah/omnipay
+```
+
+You can also include the package directly in the `composer.json` file
+```
+{
+    "require": {
+        "myfatoorah/omnipay": "dev-master"
+    }
+}
+```
+## Usage
+
+### Creating a payment link
 
 ```php
 use Omnipay\Omnipay;
@@ -28,6 +57,8 @@ if ($transaction->isSuccessful()) {
     echo $transaction->getMessage();
 }
 ```
+### Checking payment status
+
 In the callback, Get Payment status for a specific Payment ID
 
 ```php
@@ -40,6 +71,8 @@ if ($callback->isSuccessful()) {
     echo $callback->getMessage();
 }
 ```
+### Make a refund
+
 Refund a specific Payment ID
 
 ```php

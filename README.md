@@ -7,7 +7,6 @@
 [![Build Status](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/badges/build.png?b=master)](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/?branch=master)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
-[![Code Coverage](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/my-fatoorah/omnipay-myfatoorah/?branch=master)
 [![Total Downloads](http://poser.pugx.org/myfatoorah/omnipay/downloads)](https://packagist.org/packages/myfatoorah/omnipay)
 
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment

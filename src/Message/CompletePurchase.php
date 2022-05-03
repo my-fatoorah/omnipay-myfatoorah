@@ -8,13 +8,22 @@ class CompletePurchase extends AbstractRequest {
         return isset($_GET['paymentId']) ? $_GET['paymentId'] : '';
     }
 
+    public function getInvoiceId() {
+        return isset($_GET['invoiceid']) ? $_GET['invoiceid'] : '';
+    }
+
     public function setPaymentId($value) {
         return $this->setParameter('paymentId', $value);
     }
 
     public function getData() {
-        $data['Key']     = $this->getPaymentId();
-        $data['KeyType'] = "paymentId";
+        if($this->getPaymentId()){
+            $data['Key']     = $this->getPaymentId();
+            $data['KeyType'] = "paymentId";
+        }else{
+            $data['Key']     = $this->getInvoiceId();
+            $data['KeyType'] = "invoiceid";
+        }
         return $data;
     }
 

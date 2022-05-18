@@ -61,6 +61,8 @@ In the callback, Get Payment status for a specific Payment ID
 
 ```php
 $callBackData = ['paymentId' => '100202113817903101'];
+// or 
+$callBackData = ['invoiceid' => '75896'];
 $callback     = $gateway->completePurchase($callBackData)->send();
 if ($callback->isSuccessful()) {
     echo "<pre>";

@@ -127,7 +127,7 @@ class Response implements \Omnipay\Common\Message\ResponseInterface {
             return 'Payment is pending';
         }
 
-        return print_r($json->Data, 1);
+        return $json->Data;
     }
 
     public function getRefundInfo() {

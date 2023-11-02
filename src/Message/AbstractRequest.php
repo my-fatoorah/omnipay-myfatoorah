@@ -7,7 +7,7 @@ use Guzzle\Http\Exception\ClientErrorResponseException;
 abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest {
 
     protected $sandboxEndpoint    = "https://apitest.myfatoorah.com";
-    protected $productionEndpoint = "https://api.myfatoorah.com";
+    protected $productionEndpoint = "https://api-sa.myfatoorah.com";
 
     public function getApiKey() {
         return $this->getParameter('apiKey');
